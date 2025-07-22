@@ -19,3 +19,8 @@ CREATE TABLE netflix
 
 SELECT * FROM netflix;
 --COUNT THE NUMBER OF MOVIES VS TV SHOWS
+SELECT 
+    type,
+    COUNT(*)
+FROM netflix
+GROUP BY 1;
